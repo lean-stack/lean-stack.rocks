@@ -1,0 +1,23 @@
+---
+import SunIcon from "astro-heroicons/outline/Sun.astro";
+import MoonIcon from "astro-heroicons/outline/Moon.astro";
+---
+
+<button
+  data-darkmode-toggle
+  aria-label="Dunkelmodus ein/aus"
+  class="flex p-1 rounded bg-slate-200 dark:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+>
+  <SunIcon class="h-5 w-5 dark:hidden" />
+  <MoonIcon class="h-5 w-5 hidden dark:inline" />
+</button>
+
+<script>
+  document
+    .querySelector("[data-darkmode-toggle]")
+    ?.addEventListener("click", () => {
+      const wasDark = document.documentElement.classList.contains("dark");
+      document.documentElement.classList.toggle("dark");
+      localStorage.setItem("theme", wasDark ? "light" : "dark");
+    });
+</script>
