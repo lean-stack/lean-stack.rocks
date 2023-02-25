@@ -1,15 +1,14 @@
 ---
-import SunIcon from "astro-heroicons/outline/Sun.astro";
-import MoonIcon from "astro-heroicons/outline/Moon.astro";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 ---
 
 <button
   data-darkmode-toggle
   aria-label="Dunkelmodus ein/aus"
-  class="flex p-1 rounded bg-slate-200 dark:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
+  class="flex p-2 rounded bg-slate-200 dark:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-500"
 >
-  <SunIcon class="h-5 w-5 dark:hidden" />
-  <MoonIcon class="h-5 w-5 hidden dark:inline" />
+  <SunIcon className="h-5 w-5 dark:hidden" />
+  <MoonIcon className="h-5 w-5 hidden dark:inline" />
 </button>
 
 <script>
