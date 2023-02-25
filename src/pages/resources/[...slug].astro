@@ -17,6 +17,10 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout>
-  <h1>{entry.data.title}</h1>
-  <Content />
+  <div
+    class="prose dark:prose-invert prose-slate max-w-none prose-headings:font-semibold"
+  >
+    <h1>{entry.data.title}</h1>
+    <Content />
+  </div>
 </BaseLayout>
