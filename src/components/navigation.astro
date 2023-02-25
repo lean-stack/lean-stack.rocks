@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import { Navigation } from "./navigation";
+
+const resources = await getCollection("resources");
+---
+
+<Navigation
+  client:idle
+  resources={resources.map((r) => ({ id: r.id, slug: r.slug, data: r.data }))}
+/>
