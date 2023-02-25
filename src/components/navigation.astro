@@ -6,6 +6,6 @@ const resources = await getCollection("resources");
 ---
 
 <Navigation
-  client:idle
+  client:only
   resources={resources.map((r) => ({ id: r.id, slug: r.slug, data: r.data }))}
 />
