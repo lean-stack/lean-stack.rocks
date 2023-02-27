@@ -45,6 +45,8 @@ neue Tools und Lösungen positionieren, CRA aber noch auf eine etwas ältere Too
 Um komplette Anwendungen zu schreiben stehen wir hier vor der gleichen Herausforderung wie
 bei der Toolchain. React als View-Library enthält für die meißten Aspekte keine vorgefertigten
 Bibliotheken und es obliegt den React-Anwendern, die eigene Anwendung um diese zu ergänzen.
+Eine ähnliche Aufstellung wie ich hier bisher und im folgenden macht Robin Wieruch in seinem Blog
+[React Libraries for 2023](https://www.robinwieruch.de/react-libraries/).
 
 ### Formular-Unterstützung
 
@@ -102,6 +104,36 @@ Facebook umsetzen (https://facebook.github.io/flux/).
 Persönlich verzichte ich seit einiger Zeit gerne komplett auf Redux, sondern setze auf
 eine Kombination von React Router oder SWR sowie Recoil oder Jotai.
 
+### UI
+
+Persönlich favorisiere ich zur Zeit auschließlich sogenannte Headless-Bibliotheken. Und meiner wenig
+vorhandenen Design-Kenntnisse geschuldet, setze ich hauptsächlich auf Utility-Bibliotheken
+wie [Tailwind CSS](https://tailwindcss.com/).
+Bei den kompletten UI Frameworks fällt es mir schwerer aus den Grenzen des _Rahmens_ auszubrechen und ich
+stoße relativ schnell immer wieder an diese Grenzen. Bzw. gefällt mir die jeweilige Lösung des
+Frameworks überhaupt nicht.
+
+#### Headless Libraries
+
+- [Radix UI](https://www.radix-ui.com/)
+- [Headless UI](https://headlessui.com/)
+- [Reach UI](https://reach.tech/)
+
+Und Beispiele für singuläre Lösungen:
+
+- [Tanstack Table, Ranger, ... (more to come)](https://tanstack.com/)
+- [Downshift - Ultimative Combobox-Lösung](https://www.downshift-js.com/)
+- [Command Palette](https://cmdk.paco.me/)
+
+#### Component Libraries / Frameworks
+
+- [MUI - Material UI](https://mui.com/core/)
+- [Mantine](https://mantine.dev/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Ant Design](https://ant.design/)
+- [Primer React](https://primer.style/react/)
+- ...
+
 ## Blogs
 
 - [Josh Comeau](https://www.joshwcomeau.com/)
@@ -123,8 +155,9 @@ eine Kombination von React Router oder SWR sowie Recoil oder Jotai.
 - [A Thorough Analysis of CSS-in-JS](https://css-tricks.com/a-thorough-analysis-of-css-in-js/)
 
 Folgend drei Projekte, die Beispiel-Implementierungen für eigene Hooks liefern. Ich empfehle
-die letzteren beiden nicht komplett zu installieren, sondern im Quellcode zu stöbern und dann
-eigene Hooks zu schreiben. So wie es auch die erste Seite **useHooks** vormacht.
+die letzteren beiden nicht einfach - wie auf der jeweiligen Webseite beschrieben - zu installieren, sondern
+im Quellcode zu stöbern und dann eigene Hooks zu schreiben. So wie es auch die erste Seite
+**useHooks** vormacht.
 
 - [useHooks](https://usehooks.com/)
 - [React Hooks Library](https://react-hooks-library.vercel.app/)
