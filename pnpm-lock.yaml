@@ -11,6 +11,9 @@ importers:
       astro:
         specifier: ^6.3.8
         version: 6.3.8(lightningcss@1.25.1)(rollup@4.60.4)(yaml@2.9.0)
+      open-props:
+        specifier: ^1.7.23
+        version: 1.7.23
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.9
@@ -1307,6 +1310,9 @@ packages:
 
   oniguruma-to-es@4.3.6:
     resolution: {integrity: sha512-csuQ9x3Yr0cEIs/Zgx/OEt9iBw9vqIunAPQkx19R/fiMq2oGVTgcMqO/V3Ybqefr1TBvosI6jU539ksaBULJyA==}
+
+  open-props@1.7.23:
+    resolution: {integrity: sha512-+xyrJmxV9QUBFbSwPROYhOg/FLXry+uuPr4R+B5EaE4556Oc18/8ZC/fL5A+/lbRSwNvA0Alh+C0KpyFWLmLZg==}
 
   p-limit@7.3.0:
     resolution: {integrity: sha512-7cIXg/Z0M5WZRblrsOla88S4wAK+zOQQWeBYfV3qJuJXMr+LnbYjaadrFaS0JILfEDPVqHyKnZ1Z/1d6J9VVUw==}
@@ -3316,6 +3322,8 @@ snapshots:
       oniguruma-parser: 0.12.2
       regex: 6.1.0
       regex-recursion: 6.0.2
+
+  open-props@1.7.23: {}
 
   p-limit@7.3.0:
     dependencies:

@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.3.8"
+    "astro": "^6.3.8",
+    "open-props": "^1.7.23"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",

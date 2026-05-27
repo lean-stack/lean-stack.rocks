@@ -1,4 +1,6 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "biomejs.biome"
+  "editor.defaultFormatter": "biomejs.biome",
+  "cssvar.files": ["./node_modules/open-props/open-props.min.css"],
+  "cssvar.ignore": []
 }
