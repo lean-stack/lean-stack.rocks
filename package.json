@@ -10,13 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.3.8",
-    "tailwindcss": "4.0.0-alpha.17"
+    "astro": "^6.3.8"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@biomejs/biome": "2.4.15",
-    "@tailwindcss/vite": "4.0.0-alpha.17",
     "typescript": "~6.0.3"
   }
 }
