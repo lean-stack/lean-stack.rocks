@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles.css';
+
+const tips = await getCollection('tips');
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tips – Lean Stack</title>
+  </head>
+  <body>
+    <main class="tips-list">
+      {tips.map((tip) => (
+        <a href={`/tips/${tip.id}`} class="tip-card">
+          <h2>{tip.data.title}</h2>
+          <ul class="tags">
+            {tip.data.tags.map((tag) => <li>{tag}</li>)}
+          </ul>
+        </a>
+      ))}
+    </main>
+  </body>
+</html>
